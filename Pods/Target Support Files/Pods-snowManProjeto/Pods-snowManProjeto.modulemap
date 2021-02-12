@@ -1,0 +1,6 @@
+framework module Pods_snowManProjeto {
+  umbrella header "Pods-snowManProjeto-umbrella.h"
+
+  export *
+  module * { export * }
+}

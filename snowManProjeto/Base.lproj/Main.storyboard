@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ThK-SO-zFT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Adicionar Pergunta-->
+        <scene sceneID="w2S-t5-L5H">
+            <objects>
+                <viewController id="GYZ-le-yyM" customClass="FaqViewController" customModule="snowManProjeto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="3" contentMode="scaleAspectFill" id="m0s-dN-qgn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Titulo da Pergunta" minimumFontSize="24" translatesAutoresizingMaskIntoConstraints="NO" id="Xgx-07-Kcl">
+                                <rect key="frame" x="54" y="156" width="306" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="306" id="PIe-V9-Z5K"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="webSearch"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Faça Sua Pergunta Aqui " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Omy-w7-akJ">
+                                <rect key="frame" x="115" y="127" width="185" height="21"/>
+                                <color key="tintColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resposta da  Pergunta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiL-3g-QtT">
+                                <rect key="frame" x="123" y="258" width="172" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" allowsEditingTextAttributes="YES" borderStyle="line" placeholder="Digite Sua Resposta Aqui." adjustsFontForContentSizeCategory="YES" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="HUd-Tj-CsV">
+                                <rect key="frame" x="56" y="287" width="306" height="144"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="cMp-Ov-EnV"/>
+                                    <constraint firstAttribute="width" constant="306" id="jwH-us-gUu"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <textInputTraits key="textInputTraits" keyboardType="twitter"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1dh-XV-d2i">
+                                <rect key="frame" x="70" y="498" width="279" height="30"/>
+                                <color key="backgroundColor" red="0.96058195830000004" green="0.75455695389999999" blue="0.2586410046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KD2-B6-pdk"/>
+                                    <constraint firstAttribute="width" constant="279" id="Uk6-TE-rm1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <state key="normal" title="Adicionar">
+                                    <color key="titleColor" red="0.043495938179999999" green="0.059644035999999997" blue="0.4274789095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.96058195830000004" green="0.75455695389999999" blue="0.2586410046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="add" destination="GYZ-le-yyM" eventType="touchUpInside" id="spD-9i-t5P"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="D2N-9E-OhP"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xgx-07-Kcl" firstAttribute="top" secondItem="Omy-w7-akJ" secondAttribute="bottom" constant="8" symbolic="YES" id="4zY-LC-wzw"/>
+                            <constraint firstItem="EiL-3g-QtT" firstAttribute="top" secondItem="Xgx-07-Kcl" secondAttribute="bottom" constant="68" id="5uA-la-pq4"/>
+                            <constraint firstItem="D2N-9E-OhP" firstAttribute="trailing" secondItem="EiL-3g-QtT" secondAttribute="trailing" constant="119" id="6XD-e7-dvV"/>
+                            <constraint firstItem="Omy-w7-akJ" firstAttribute="leading" secondItem="D2N-9E-OhP" secondAttribute="leading" constant="115" id="BaN-BP-5F4"/>
+                            <constraint firstItem="D2N-9E-OhP" firstAttribute="trailing" secondItem="HUd-Tj-CsV" secondAttribute="trailing" constant="52" id="IJQ-gB-Y77"/>
+                            <constraint firstItem="Omy-w7-akJ" firstAttribute="top" secondItem="D2N-9E-OhP" secondAttribute="top" constant="39" id="IKk-e6-T9B"/>
+                            <constraint firstItem="HUd-Tj-CsV" firstAttribute="leading" secondItem="D2N-9E-OhP" secondAttribute="leading" constant="56" id="MuV-Ni-pQE"/>
+                            <constraint firstItem="D2N-9E-OhP" firstAttribute="trailing" secondItem="Omy-w7-akJ" secondAttribute="trailing" constant="114" id="O9E-5u-n2U"/>
+                            <constraint firstItem="HUd-Tj-CsV" firstAttribute="top" secondItem="EiL-3g-QtT" secondAttribute="bottom" constant="8" symbolic="YES" id="PGC-kW-3mi"/>
+                            <constraint firstItem="Xgx-07-Kcl" firstAttribute="leading" secondItem="D2N-9E-OhP" secondAttribute="leading" constant="54" id="QWv-0E-eww"/>
+                            <constraint firstItem="EiL-3g-QtT" firstAttribute="leading" secondItem="D2N-9E-OhP" secondAttribute="leading" constant="123" id="T6Y-vf-Uj2"/>
+                            <constraint firstItem="D2N-9E-OhP" firstAttribute="trailing" secondItem="1dh-XV-d2i" secondAttribute="trailing" constant="65" id="c3z-Gp-8VA"/>
+                            <constraint firstItem="D2N-9E-OhP" firstAttribute="trailing" secondItem="Xgx-07-Kcl" secondAttribute="trailing" constant="54" id="omX-m3-uU4"/>
+                            <constraint firstItem="1dh-XV-d2i" firstAttribute="top" secondItem="HUd-Tj-CsV" secondAttribute="bottom" constant="67" id="pxw-j8-YE7"/>
+                            <constraint firstItem="1dh-XV-d2i" firstAttribute="leading" secondItem="D2N-9E-OhP" secondAttribute="leading" constant="70" id="tfb-1q-sFO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adicionar Pergunta" id="W9v-FB-aGh"/>
+                    <connections>
+                        <outlet property="answerTextField" destination="HUd-Tj-CsV" id="I1j-L4-SPb"/>
+                        <outlet property="questionTextField" destination="Xgx-07-Kcl" id="f5d-tk-Nrf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B9r-We-Bxx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.56521739130437" y="193.52678571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="d5I-CD-UoY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ThK-SO-zFT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e84-uZ-Rmj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.043495938179999999" green="0.059644035999999997" blue="0.4274789095" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="d9r-6m-bKw" kind="relationship" relationship="rootViewController" id="veC-eA-XFX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGJ-G3-SoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-93" y="-638"/>
+        </scene>
+        <!--Perguntas Frequentes-->
+        <scene sceneID="1ME-4K-bcP">
+            <objects>
+                <tableViewController id="d9r-6m-bKw" customClass="FaqListTableViewController" customModule="snowManProjeto" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MXw-WY-Bh9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="1PV-FM-jDT">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1PV-FM-jDT" id="M9g-I3-VVo">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d9r-6m-bKw" id="yOM-Hx-fgm"/>
+                            <outlet property="delegate" destination="d9r-6m-bKw" id="YO4-DT-2HU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Perguntas Frequentes" id="87l-cB-dMk">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="Ptf-Tp-Rti">
+                            <color key="tintColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="GYZ-le-yyM" kind="show" id="cNs-as-c0H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1IV-GN-wX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="194"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
